@@ -1,5 +1,5 @@
 'use strict'
-const secretNumber=Math.trunc(Math.random()*20)+1
+let secretNumber=Math.trunc(Math.random()*20)+1
 let scoreState=20;
 let highscore=0;
 //будем получать целое число между 1 и 20  Транк отбросил десятичные будет(0.1 , 0.2, а +1 добавлен чтобы не было нуля, иначе будет от
@@ -61,7 +61,7 @@ document.querySelector('.check').addEventListener('click',()=>{
 //реазилуем кнопку - Сначала!
 document.querySelector('.again').addEventListener('click',()=>{
 
-    const secretNumber=Math.trunc(Math.random()*20)+1
+    secretNumber=Math.trunc(Math.random()*20)+1
     scoreState=20;
     document.querySelector('.guess-message').textContent='Начни угадывать =)'
     document.querySelector('.score').textContent=scoreState
@@ -73,6 +73,7 @@ document.querySelector('.again').addEventListener('click',()=>{
     let guessingNumber =0
     document.querySelector('.question').style.color='#000'
     document.querySelector('.number-input').value=''
+    console.log(`Секретное число : ${secretNumber}`)
 })
 
 
