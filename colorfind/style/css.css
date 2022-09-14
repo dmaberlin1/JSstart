@@ -1,7 +1,7 @@
 #field td{
-    width: 150px;
-    height: 150px;
-    border: 2px solid black;
+    width: 350px;
+    height: 350px;
+    border: 5px solid black;
     text-align: center;
     font-weight: bold;
 }
