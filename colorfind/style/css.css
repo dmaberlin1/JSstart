@@ -1,0 +1,18 @@
+#field td{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.red{
+    background-color: rgba(235, 0, 42, 0.5)
+
+}
+.green{
+    background: darkseagreen;
+}
+.blue{
+    background: lightskyblue;
+}
